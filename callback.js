@@ -6,7 +6,19 @@ function callback() {
   console.log("Log something");
 }
 
+const arrFn = () => console.log("Log something");
+
 execute(callback);
+
+execute(function () {
+  console.log("Log something");
+});
+
+execute(() => console.log("Log something"));
+
+execute(() => {
+  console.log("Log something");
+});
 
 /* 
 const arr = [0, 1, 2, 3];
